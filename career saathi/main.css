@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,500,600,700,800|Nunito:300,300i,400,400i,600,600i,700,700i');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ul{
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/*navbar*/
+.navbar{
+   position: fixed;
+  height: 110px;
+  top: 0;
+  width: 100%;
+  box-shadow: 2px 2px 10px #9191ff;
+}
+.link{
+  text-decoration: none;
+  color: black;
+  right: 20px;
+  top: 40px;
+  position: absolute;
+
+}
+.anime{
+    animation-name: blink;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  transition: ease;
+}
+
+.logo{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-family: nunito;
+  font-style: italic;
+  height: 100px;
+  width: 180px;
+}
+
+.main{
+  width: 100%;
+  position: relative;
+  top: 40px;
+  overflow-x: hidden;
+}
+.row{
+  width: 100%;
+
+}
+.box{
+  height: 450px;
+  width: 300px;
+  padding: 0;
+}
+.vector{
+  height: 400px;
+  width: 400px;
+}
+.para{
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 17px;
+}
+.head{
+  padding-top: 100px;
+}
+
+
+@keyframes blink{
+  from{color: black;}
+  to{color: #7171ff;}
+}
+
+.footer{
+  font-family: nunito;
+  font-size: 14px;
+  position: relative;
+  margin-top: 15px;
+  bottom: 0px;
+}
+.hid{
+  display: none;
+}
+
+
+@media only screen and (max-width: 769px){
+.hide{
+  display: none;
+}
+.para{
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 17px;
+}
+}
+
+@media only screen and (max-width: 426px){
+
+.hid{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.link{
+  right: 5px;
+}
+}
+
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+ background: white;
+
+}
+::-webkit-scrollbar-thumb{
+  background-color:#9191ff;
+
+ padding: 3px;
+}
